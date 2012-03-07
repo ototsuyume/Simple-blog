@@ -1,0 +1,27 @@
+$def with(content)
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>ototsuyume's blog</title>
+        <link href="/static/styles/reset.css" rel="stylesheet" type="text/css" />
+        <link href="/static/styles/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="box">
+            <div class="header">
+                <a href="/">simple-blog</a>
+            </div>
+            
+                $:content
+            <div class="footer">
+                <table id="info" width="20%">
+                    <tr><td><b>Copyright@ototsuyume</b></td><td>
+                            <a href="http://webpy.org"><img
+                                src="/static/images/webpy_ss.png"/></a></td></tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+

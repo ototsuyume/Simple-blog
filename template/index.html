@@ -1,0 +1,42 @@
+$def with(article,pre,ne,isadmin)
+	
+$:render.blusb(isadmin)
+
+<div class="content">
+
+    $for i in article:
+        <br/>
+        <div class="article">
+            <a href="/article/$i.id"><h1>$i.title</h1></a>
+            <li>发表于 $i.date</li> 
+            
+            $if isadmin:
+                <table width="20%">
+                    <tr>
+                        <td><a href="/article/edit/$i.id">修改</a></td>
+                        <td><a href="/article/del/$i.id" onclick="return confirm('删除文章后无法恢复，确认删除？')">删除</a></td>
+                    </tr>
+                </table>
+            <br/>
+            <p>$:i.content</p>
+            <br/>
+            <a href="/article/$i.id" id="ctag">Comments($i.comment)</a>
+        </div>
+
+    <br/>
+$if pre!=0 or ne!=0:	
+    <table  class="pagecount" width="50px">
+        <tr>
+            $if pre!=0:
+                <td class="turn"><a href="/?p=$pre"><h2>&lt&ltNewer</h2></a></td>
+            $else:
+                <td class="turn"><h3>&lt&ltNewer</h3></td>
+            <td><h3>||</h3></td>
+            $if ne!=0:
+                <td class="turn"><a href="/?p=$ne"><h3>Older&gt&gt</h3></a></td>
+            $else:
+                <td class="turn"><h3>Older&gt&gt</h3></td>
+            </tr>
+        </table>
+
+</div>

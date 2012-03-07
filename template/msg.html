@@ -1,0 +1,26 @@
+$def with(isadmin,comment)
+
+$:render.blusb(isadmin)
+
+
+
+<div class="commarea">
+    $for i in comment:
+        $if i.usrid==0:
+			<div class="comlist">
+            $if i.homepage=='':
+				<h3>$i.author</h3>
+            $else:
+                <a href="$i.homepage" target="_blank"><h3>$i.author</h3></a>
+        $else:
+                <div class="admincomm">
+					<h3><span>[Admin]</span>$i.author</h3>
+        <li class="date">发表于 $i.date</li>
+        <p>$i.content</p>
+        $if isadmin:
+            <a href="/about/del/$i.id">删除评论</a>
+        </div>
+
+</div>
+
+

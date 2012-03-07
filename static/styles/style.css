@@ -1,0 +1,275 @@
+body 
+{
+    background:#909090;
+}
+
+
+textarea
+{
+    resize:none;
+}
+
+
+.header
+{
+    padding-bottom:10px;
+}
+.box
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:140px;
+    margin-right:140px;
+    border:1px solid #ccc;
+    background-color:#fff;
+    padding:10px 20px;
+    -moz-box-shadow: 2px 2px 10px #505050;
+    -webkit-box-shadow: 2px 2px 10px #505050;
+    
+}
+.footer
+{
+    border-top:1px solid #ccc;
+    padding-top:10px;
+    font-size:11px;
+    font-color:#eff;
+}
+.content
+{
+	min-height:200px;
+}
+
+.article
+{
+    margin-left:120px;
+    margin-right:120px;
+    padding-left:50px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:50px;
+    /*background-color:#eee;*/
+    border:1px solid #ccc;
+    border-radius:10px;
+  /*  word-break:break-all;*/
+    
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+ 
+}
+
+
+.article a
+{
+    text-decoration:none;
+}
+
+.article a:visited
+{
+
+}
+
+.article li
+{
+    font-size:8px;
+}
+
+.article p
+{
+    font-size:17px;
+}
+
+#ctag
+{
+    margin-right:50px;
+    padding-right:50;
+}
+
+.pagecount
+{
+    margin-left:auto;
+	margin-right:auto;
+}
+.commarea
+{
+	margin-left:120px;
+    margin-right:120px;
+}
+.comlist
+{
+    border:1px solid #ccc;
+    padding-left:50px;
+	padding-bottom:10px;
+    padding-right:50px;
+	padding-top:10px;
+    margin-top:10px;
+    border-radius:10px;
+    background-color:#fec;
+    width:50%;
+    word-break:break-all;
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+
+}
+.admincomm
+{
+
+    width:50%;
+    border:1px solid #ccc;
+    padding-left:50px;
+    padding-right:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+    margin-top:10px;
+    border-radius:10px;
+    background-color:#eee;
+    word-break:break-all;
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+}
+.admincomm li
+{
+    font-size:12px;
+    font-color:#eef;
+}
+
+.admincomm p
+{
+    font-size:17px;
+}
+
+
+.comlist li
+{
+    font-size:12px;
+    font-color:#eef;
+}
+
+.comlist p
+{
+    font-size:17px
+}
+
+.postc
+{
+    border-radius:10px;
+    margin-left:120px;
+    margin-right:120px;
+    padding-top:auto;
+    padding-left:20px;
+    padding-bottom:10px;
+    border:1px solid #ccc;
+    background-color:#eee;
+    line-height:35px;
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+}
+
+#info
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.login
+{
+    
+    /*margin-left: auto;
+    margin-right: auto;
+    */
+    width:100%;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:center;
+   
+    line-height:35px;
+}
+.blurb
+{
+    padding-left:20px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:50px;
+    background-color:#eee;
+    border:1px solid #ccc;
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+}
+
+.blurb a
+{
+    text-decoration:none;
+    font-size:15px;
+}
+
+.edit
+{
+    border-radius:10px;
+    margin-left:120px;
+    margin-right:120px;
+    margin-top:15px;
+    padding-top:15px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+    background-color:#eee;
+    line-height:35px;
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+}
+
+#field
+{
+	width:100%;
+	height:800px;
+}
+
+.error
+{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-family:微软雅黑;
+}
+
+.about
+{
+	text-align:center;
+	min-height:200px;
+	margin-top:10px;
+	border:1px solid #ccc;
+	 margin-left:120px;
+    margin-right:120px;
+
+    padding-top:10px;
+    padding-bottom:10px;
+
+
+    border-radius:10px;
+
+    
+    -moz-box-shadow: 2px 2px 10px #909090;
+    -webkit-box-shadow: 2px 2px 10px #909090;
+
+}
+
+button,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button, input {
+  *overflow: visible;
+  line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+

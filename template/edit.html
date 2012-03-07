@@ -1,0 +1,25 @@
+$def with(isadmin,aid,cont)
+<script charset="utf-8" type="text/javascript" src="/static/editor/kindeditor.js"></script>
+<script charset="utf-8" type="text/javascript" src="/static/editor/lang/zh_CN.js"></script>
+<script type="text/javascript">
+KE.show({
+			id : 'field',
+			cssPath:'',
+			resizeMode : 1,
+		});
+
+</script>
+$:render.blusb(isadmin)
+<div class="edit"> 
+	$if aid==0:
+		<form method="post" action="/article/post">
+			<p>标题:<input type="text" name="title" style="width:600px"/></p>
+			<p>内容:<textarea id="field" name="content" ></textarea></p>
+	$else:
+		<form method="post" action="/article/edit/post/$aid">
+			<p>标题:<input type="text" name="title" value="$cont.title" style="width:600px"/></p>
+			<p>内容:<textarea id="field" name="content" >$cont.content</textarea></p>
+	<p><input type="submit"  value="提交"/></p>
+	</form>
+</div>
+

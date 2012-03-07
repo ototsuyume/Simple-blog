@@ -1,0 +1,23 @@
+$def with(count,isadmin)
+<script type="text/javascript" src="/static/js/check.js">
+
+</script>
+$:render.blusb(isadmin)
+
+
+
+<div class="login">
+    $if isadmin:
+        <h1>你已经登录</h1>
+    $else:
+        $if count==0:
+            <h1>目前没有管理员，请输入用户名与密码创建用户</h1>
+            <form name="usrinfo" method="post" action="/addusr"  enctype="multipart/form-data" onsubmit="return checkusr()">
+        $else:
+            <form  name="usrinfo" method="post" action="/login"  enctype="multipart/form-data" onsubmit="return checkusr()">
+
+        <p>用户:<input type="text" name="usrname"/></p>
+        <p>密码:<input type="password" name="password"/></p>
+        <input type="submit" value="确定">
+        </form>
+</div>

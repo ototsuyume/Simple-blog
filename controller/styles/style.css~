@@ -1,0 +1,27 @@
+body 
+{
+    background:#eee;
+}
+.header
+{
+    border-bottom:1px solid #ccc;
+    padding-bottom:10px;
+}
+.box
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:100px;
+    margin-right:100px;
+    border:1px solid #ccc;
+    background-color:#fff;
+    padding:10px 20px;
+    border-radius:20px
+}
+.footer
+{
+    border-top:1px solid #ccc;
+    padding-bottom:10px;
+    font-size:11px;
+    font-color:#eff;
+}
