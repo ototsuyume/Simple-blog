@@ -9,6 +9,7 @@ create table article
 	content text not null,
 	usrid int not null default 1,
 	author varchar(255) default '',
+	tag varchar(32) default '',
 	primary key(id)
 )engine=innodb,charset=utf8;
 
@@ -21,7 +22,8 @@ create table comment
 	homepage varchar(512) not null default '',
 	usrid int not null default 0,
 	articleid int not null,
-	date datetime not null
+	date datetime not null,
+	primary key(id)
 )engine=innodb,charset=utf8;
 
 create table user
